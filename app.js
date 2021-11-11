@@ -12,10 +12,6 @@ app.use(express.urlencoded({ extended: true }));
 const routes = require('./server/routes/foodRoutes.js');
 app.use('/', routes);
 
-app.listen(port, () => console.log('Listening on port ${port}'))
+app.listen(port, () => console.log(`Listening on port ${port}`))
 // Routes 
-app.get('/', (req, res) => {
-    res
-})
 
-app.listen(process.env.PORT)
